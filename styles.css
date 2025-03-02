@@ -1,40 +1,46 @@
+/* **General page styling** */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f4f4f9; /* **Light background for a clean look** */
 }
 
+/* **Header section styling** */
 header {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* **Green color for a financial theme** */
     color: white;
     text-align: center;
     padding: 1rem 0;
 }
 
+/* **Main content area styling** */
 main {
     padding: 1rem;
-    max-width: 800px;
+    max-width: 800px; /* **Restricts content width for better readability** */
     margin: auto;
     background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* **Rounded corners for a modern look** */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* **Subtle shadow for depth** */
 }
 
 h2 {
     margin-bottom: 1rem;
 }
 
+/* **Form layout and styling** */
 form {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
+/* **Ensures form elements are evenly spaced** */
 form label, form input, form select, form button {
     width: calc(50% - 1rem);
 }
 
+/* **Submit button styling** */
 form button {
     width: 100%;
     background-color: #4CAF50;
@@ -45,16 +51,19 @@ form button {
     border-radius: 4px;
 }
 
+/* **Hover effect for better UX** */
 form button:hover {
     background-color: #45a049;
 }
 
+/* **Table styling for transaction history** */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
 }
 
+/* **Table cell and header styling** */
 table th, table td {
     border: 1px solid #ddd;
     padding: 0.5rem;
@@ -65,6 +74,7 @@ table th {
     background-color: #f4f4f9;
 }
 
+/* **Balance section styling** */
 #balance p {
     font-size: 1.2rem;
     font-weight: bold;
