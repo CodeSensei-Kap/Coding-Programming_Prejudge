@@ -8,9 +8,10 @@
 </head>
 <body>
     <header>
-        <h1>Personal Finance Tracker</h1>
+        <h1>Personal Finance Tracker</h1> <!-- **Main heading of the application** -->
     </header>
     <main>
+        <!-- **Section for adding new transactions** -->
         <section id="input-section">
             <h2>Add Transaction</h2>
             <form id="transaction-form">
@@ -25,20 +26,25 @@
                 <input type="text" id="category" required>
                 <label for="date">Date:</label>
                 <input type="date" id="date" required>
-                <button type="submit">Add</button>
+                <button type="submit">Add</button> <!-- **Button to submit transaction data** -->
             </form>
         </section>
 
+        <!-- **Section displaying balance and transaction history** -->
         <section id="summary-section">
             <h2>Summary</h2>
             <div id="balance">
-                <p>Current Balance: $<span id="current-balance">0.00</span></p>
+                <p>Current Balance: $<span id="current-balance">0.00</span></p> <!-- **Displays the user's current balance** -->
             </div>
+            
+            <!-- **Section for filtering transactions by date** -->
             <div id="filters">
                 <label for="filter-date">Filter by Date:</label>
                 <input type="date" id="filter-date">
                 <button id="clear-filter">Clear Filter</button>
             </div>
+            
+            <!-- Table displaying transaction history -->
             <table id="transactions-table">
                 <thead>
                     <tr>
@@ -46,14 +52,15 @@
                         <th>Amount</th>
                         <th>Category</th>
                         <th>Date</th>
-                        <th>Actions</th>
+                        <th>Actions</th> <!-- **Column for delete buttons** -->
                     </tr>
                 </thead>
                 <tbody id="transactions-body">
+                    <!-- **Transaction records will be dynamically added here** -->
                 </tbody>
             </table>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- **Links the JavaScript file for dynamic functionality** -->
 </body>
 </html>
